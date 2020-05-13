@@ -238,7 +238,13 @@ public class TransactionsService: NSObject {
                         let transaction = try self.jsonDecoder.decode(SubmitTransactionResponse.self, from: data)
                         response(.success(details: transaction))
                     } catch {
-                        response(.failure(error: .parsingResponseFailed(message: error.localizedDescription)))
+
+                        if let jsonStr = String(data: data, encoding: .utf8) {
+                            response(.failure(error: .parsingResponseFailed(message: jsonStr)))
+                        }
+                        else {
+                            response(.failure(error: .parsingResponseFailed(message: error.localizedDescription)))
+                        }
                     }
                 case .failure(let error):
                     response(.failure(error:error))

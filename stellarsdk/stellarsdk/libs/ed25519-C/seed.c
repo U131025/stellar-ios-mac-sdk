@@ -1,4 +1,4 @@
-#include "ed25519.h"
+#include "ed25519c.h"
 
 #ifndef ED25519_NO_SEED
 

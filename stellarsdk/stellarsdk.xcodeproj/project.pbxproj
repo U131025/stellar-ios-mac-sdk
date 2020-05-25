@@ -86,7 +86,7 @@
 		743DF56E2020530A00713DE7 /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = 743DF55B2020530A00713DE7 /* sign.c */; };
 		743DF56F2020530A00713DE7 /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF55C2020530A00713DE7 /* sha512.h */; };
 		743DF5702020530A00713DE7 /* sc.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF55D2020530A00713DE7 /* sc.h */; };
-		743DF5712020530A00713DE7 /* ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF55F2020530A00713DE7 /* ed25519.h */; };
+		743DF5712020530A00713DE7 /* ed25519c.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF55F2020530A00713DE7 /* ed25519c.h */; };
 		743DF5722020530A00713DE7 /* key_exchange.c in Sources */ = {isa = PBXBuildFile; fileRef = 743DF5602020530A00713DE7 /* key_exchange.c */; };
 		743DF5732020530A00713DE7 /* ge.c in Sources */ = {isa = PBXBuildFile; fileRef = 743DF5612020530A00713DE7 /* ge.c */; };
 		743DF5742020530A00713DE7 /* ge.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF5622020530A00713DE7 /* ge.h */; };
@@ -179,7 +179,7 @@
 		745DF41B2052FF64000D3660 /* fe.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF5532020530900713DE7 /* fe.h */; };
 		745DF41C2052FF64000D3660 /* fixedint.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF5652020530A00713DE7 /* fixedint.h */; };
 		745DF41D2052FF64000D3660 /* ge.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF5622020530A00713DE7 /* ge.h */; };
-		745DF41E2052FF64000D3660 /* ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF55F2020530A00713DE7 /* ed25519.h */; };
+		745DF41E2052FF64000D3660 /* ed25519c.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF55F2020530A00713DE7 /* ed25519c.h */; };
 		745DF41F2052FF64000D3660 /* precomp_data.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF5632020530A00713DE7 /* precomp_data.h */; };
 		745DF4202052FF64000D3660 /* sc.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF55D2020530A00713DE7 /* sc.h */; };
 		745DF4212052FF64000D3660 /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 743DF55C2020530A00713DE7 /* sha512.h */; };
@@ -989,7 +989,7 @@
 		743DF55B2020530A00713DE7 /* sign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sign.c; sourceTree = "<group>"; };
 		743DF55C2020530A00713DE7 /* sha512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha512.h; sourceTree = "<group>"; };
 		743DF55D2020530A00713DE7 /* sc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sc.h; sourceTree = "<group>"; };
-		743DF55F2020530A00713DE7 /* ed25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ed25519.h; sourceTree = "<group>"; };
+		743DF55F2020530A00713DE7 /* ed25519c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ed25519c.h; sourceTree = "<group>"; };
 		743DF5602020530A00713DE7 /* key_exchange.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key_exchange.c; sourceTree = "<group>"; };
 		743DF5612020530A00713DE7 /* ge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge.c; sourceTree = "<group>"; };
 		743DF5622020530A00713DE7 /* ge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ge.h; sourceTree = "<group>"; };
@@ -1705,7 +1705,7 @@
 		743DF55E2020530A00713DE7 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				743DF55F2020530A00713DE7 /* ed25519.h */,
+				743DF55F2020530A00713DE7 /* ed25519c.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -2511,7 +2511,7 @@
 				745DF41B2052FF64000D3660 /* fe.h in Headers */,
 				745DF41C2052FF64000D3660 /* fixedint.h in Headers */,
 				745DF41D2052FF64000D3660 /* ge.h in Headers */,
-				745DF41E2052FF64000D3660 /* ed25519.h in Headers */,
+				745DF41E2052FF64000D3660 /* ed25519c.h in Headers */,
 				745DF41F2052FF64000D3660 /* precomp_data.h in Headers */,
 				745DF4202052FF64000D3660 /* sc.h in Headers */,
 				745DF4212052FF64000D3660 /* sha512.h in Headers */,
@@ -2528,7 +2528,7 @@
 				743DF5662020530A00713DE7 /* fe.h in Headers */,
 				743DF56F2020530A00713DE7 /* sha512.h in Headers */,
 				743DF5742020530A00713DE7 /* ge.h in Headers */,
-				743DF5712020530A00713DE7 /* ed25519.h in Headers */,
+				743DF5712020530A00713DE7 /* ed25519c.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
